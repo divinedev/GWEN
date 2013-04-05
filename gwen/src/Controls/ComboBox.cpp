@@ -165,6 +165,7 @@ void ComboBox::SelectItemByName( const Gwen::String & name, bool bFireChangeEven
 void ComboBox::OnLostKeyboardFocus()
 {
 	SetTextColor( Color( 0, 0, 0, 255 ) );
+	BaseClass::OnLostKeyboardFocus();
 }
 
 

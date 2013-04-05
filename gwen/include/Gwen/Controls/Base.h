@@ -213,8 +213,8 @@ namespace Gwen
 				virtual void OnMouseClickRight( int /*x*/, int /*y*/, bool /*bDown*/ ) {}
 				virtual void OnMouseDoubleClickLeft( int x, int y ) { OnMouseClickLeft( x, y, true ); };
 				virtual void OnMouseDoubleClickRight( int x, int y ) { OnMouseClickRight( x, y, true ); };
-				virtual void OnLostKeyboardFocus() {}
-				virtual void OnKeyboardFocus() {}
+				virtual void OnLostKeyboardFocus();
+				virtual void OnKeyboardFocus();
 
 				virtual void SetMouseInputEnabled( bool b )	{ m_bMouseInputEnabled = b; }
 				virtual bool GetMouseInputEnabled()	{ return m_bMouseInputEnabled; }
@@ -319,6 +319,9 @@ namespace Gwen
 
 				Gwen::Event::Caller	onHoverEnter;
 				Gwen::Event::Caller	onHoverLeave;
+
+				Gwen::Event::Caller	onLostKeyboardFocus;
+				Gwen::Event::Caller	onKeyboardFocus;
 
 				// Childrens List
 

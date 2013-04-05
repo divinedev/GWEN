@@ -1039,6 +1039,16 @@ bool Base::HandleAccelerator( Gwen::UnicodeString & accelerator )
 	return false;
 }
 
+void Base::OnLostKeyboardFocus()
+{
+	onLostKeyboardFocus.Call( this );
+}
+
+void Base::OnKeyboardFocus()
+{
+	onKeyboardFocus.Call( this );
+}
+
 bool Base::OnKeyPress( int iKey, bool bPress )
 {
 	bool bHandled = false;
