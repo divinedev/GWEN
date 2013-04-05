@@ -58,7 +58,7 @@ GWEN_CONTROL_CONSTRUCTOR( ComboBox )
 	SetKeyboardInputEnabled( true );
 }
 
-MenuItem* ComboBox::AddItem( const UnicodeString & strLabel, const String & strName )
+MenuItem* ComboBox::AddItem( const TextObject & strLabel, const String & strName )
 {
 	MenuItem* pItem = m_Menu->AddItem( strLabel, L"" );
 	pItem->SetName( strName );
