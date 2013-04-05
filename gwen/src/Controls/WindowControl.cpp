@@ -113,7 +113,7 @@ void WindowControl::RenderUnder( Skin::Base* skin )
 	skin->DrawShadow( this );
 }
 
-void WindowControl::SetTitle( Gwen::UnicodeString title )
+void WindowControl::SetTitle( const Gwen::TextObject & title )
 {
 	m_Title->SetText( title );
 }
