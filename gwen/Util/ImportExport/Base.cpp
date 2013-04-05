@@ -55,7 +55,7 @@ namespace Gwen
 			{
 				ControlList list;
 
-				for ( int i = 0; i < pRoot->NumChildren(); i++ )
+				for ( unsigned int i = 0; i < pRoot->NumChildren(); i++ )
 				{
 					Gwen::Controls::Base* pBaseChild = pRoot->GetChild( i );
 

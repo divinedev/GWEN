@@ -21,7 +21,7 @@ GWEN_CONTROL_CONSTRUCTOR( PageControl )
 	m_iCurrentPage = 0;
 	SetUseFinishButton( true );
 
-	for ( int i = 0; i < MaxPages; i++ )
+	for ( unsigned int i = 0; i < MaxPages; i++ )
 	{
 		m_pPages[i] = NULL;
 	}
@@ -58,7 +58,7 @@ void PageControl::SetPageCount( unsigned int iNum )
 {
 	if ( iNum >= MaxPages ) { iNum = MaxPages; }
 
-	for ( int i = 0; i < iNum; i++ )
+	for ( unsigned int i = 0; i < iNum; i++ )
 	{
 		if ( !m_pPages[i] )
 		{
@@ -76,7 +76,7 @@ void PageControl::SetPageCount( unsigned int iNum )
 
 void PageControl::HideAll()
 {
-	for ( int i = 0; i < MaxPages; i++ )
+	for ( unsigned int i = 0; i < MaxPages; i++ )
 	{
 		if ( !m_pPages[i] ) { continue; }
 

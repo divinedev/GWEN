@@ -205,7 +205,7 @@ void SplitWords( const Gwen::UnicodeString & s, wchar_t delim, std::vector<Gwen:
 {
 	Gwen::UnicodeString str;
 
-	for ( int i = 0; i < s.length(); i++ )
+	for ( Gwen::UnicodeString::size_type i = 0; i < s.length(); i++ )
 	{
 		if ( s[i] == L'\n' )
 		{
