@@ -212,7 +212,7 @@ void TreeNode::OnClickName( Base* /*control*/ )
 	SetSelected( !IsSelected() );
 }
 
-void TreeNode::OnRightPress( Base* control )
+void TreeNode::OnRightPress( Base* /*control*/ )
 {
 	onRightPress.Call( this );
 }

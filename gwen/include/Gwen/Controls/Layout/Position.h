@@ -27,7 +27,7 @@ namespace Gwen
 						SetPosition( Pos::Left | Pos::Top );
 					}
 
-					void PostLayout( Skin::Base* skin )
+					void PostLayout( Skin::Base* /*skin*/ )
 					{
 						for ( Base::List::iterator it = Children.begin(); it != Children.end(); ++it )
 						{

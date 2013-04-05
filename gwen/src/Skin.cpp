@@ -77,7 +77,7 @@ namespace Gwen
 			m_Render->DrawFilledRect( Gwen::Rect( rect.x + x * 4.0f, rect.y + y * 0.0f, x * 2, y * 2 ) );
 		}
 
-		void Base::DrawTreeNode( Controls::Base* ctrl, bool bOpen, bool bSelected, int iLabelHeight, int iLabelWidth, int iHalfWay, int iLastBranch, bool bIsRoot )
+		void Base::DrawTreeNode( Controls::Base* /*ctrl*/, bool bOpen, bool /*bSelected*/, int iLabelHeight, int /*iLabelWidth*/, int iHalfWay, int iLastBranch, bool bIsRoot )
 		{
 			GetRender()->SetDrawColor( Colors.Tree.Lines );
 

@@ -45,7 +45,7 @@ namespace Gwen
 						m_Button->SetMargin( Margin( 1, 1, 1, 2 ) );
 					}
 
-					void OnButtonPress( Controls::Base* control )
+					void OnButtonPress( Controls::Base* /*control*/ )
 					{
 						Gwen::Controls::Menu* pMenu = new Menu( GetCanvas() );
 						pMenu->SetSize( 256, 180 );

@@ -37,7 +37,7 @@ namespace Gwen
 						return m_Checkbox->IsChecked() ? L"1" : L"0";
 					}
 
-					virtual void SetPropertyValue( const TextObject & v, bool bFireChangeEvents )
+					virtual void SetPropertyValue( const TextObject & v, bool /*bFireChangeEvents*/ )
 					{
 						if ( v == L"1" || v == L"true" || v == L"TRUE" || v == L"yes" || v == L"YES" )
 						{ return m_Checkbox->SetChecked( true ); }

@@ -33,7 +33,7 @@ namespace Gwen
 						return this;
 					}
 
-					void OnButtonPress( Controls::Base* control )
+					void OnButtonPress( Controls::Base* /*control*/ )
 					{
 						Gwen::Dialogs::FileOpen( true, m_strDialogName, m_TextBox->GetText().Get(), m_strFileExtension, this, &Folder::EventFilePicked );
 					}

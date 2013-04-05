@@ -183,7 +183,7 @@ bool Gwen::Platform::FileOpen( const String & Name, const String & StartPath, co
 	return true;
 }
 
-bool Gwen::Platform::FolderOpen( const String & Name, const String & StartPath, Gwen::Event::Handler* pHandler, Event::Handler::FunctionWithInformation fnCallback )
+bool Gwen::Platform::FolderOpen( const String & /*Name*/, const String & /*StartPath*/, Gwen::Event::Handler* pHandler, Event::Handler::FunctionWithInformation fnCallback )
 {
 	IFileDialog* pfd = NULL;
 	bool bSuccess = false;

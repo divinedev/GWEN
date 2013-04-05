@@ -432,7 +432,7 @@ void TextBox::Layout( Skin::Base* skin )
 	RefreshCursorBounds();
 }
 
-void TextBox::PostLayout( Skin::Base* skin )
+void TextBox::PostLayout( Skin::Base* /*skin*/ )
 {
 }
 

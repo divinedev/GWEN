@@ -66,7 +66,7 @@ namespace Gwen
 				virtual const char* GetTypeName() { return "Base"; }
 
 				virtual void DelayedDelete();
-				virtual void PreDelete( Gwen::Skin::Base* skin ) {};
+				virtual void PreDelete( Gwen::Skin::Base* /*skin*/ ) {};
 
 				virtual void SetParent( Controls::Base* pParent );
 				virtual Controls::Base* GetParent() const { return m_Parent; }
@@ -438,7 +438,7 @@ namespace Gwen
 					return ident;
 				};
 
-				virtual Gwen::Controls::Base* DynamicCast( const char* Variable )
+				virtual Gwen::Controls::Base* DynamicCast( const char* /*Variable*/ )
 				{
 					return NULL;
 				}
@@ -459,7 +459,7 @@ namespace Gwen
 				virtual TextObject GetValue();
 				virtual void SetValue( const TextObject & strValue );
 				virtual void DoAction() {};
-				virtual void SetAction( Event::Handler* pObject, Handler::FunctionWithInformation pFunction, const Gwen::Event::Packet & packet ) {};
+				virtual void SetAction( Event::Handler* /*pObject*/, Handler::FunctionWithInformation /*pFunction*/, const Gwen::Event::Packet & /*packet*/ ) {};
 
 				virtual int GetNamedChildren( Gwen::ControlList & list, const Gwen::String & strName, bool bDeep = true );
 				virtual Gwen::ControlList GetNamedChildren( const Gwen::String & strName, bool bDeep = true );

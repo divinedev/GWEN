@@ -28,7 +28,7 @@ Text::~Text()
 	// Because it's a pointer to another font somewhere.
 }
 
-void Text::Layout( Skin::Base* skin )
+void Text::Layout( Skin::Base* /*skin*/ )
 {
 	if ( m_bTextChanged )
 	{
@@ -201,7 +201,7 @@ void Text::RefreshSize()
 	Invalidate();
 }
 
-void SplitWords( const Gwen::UnicodeString & s, wchar_t delim, std::vector<Gwen::UnicodeString> & elems )
+void SplitWords( const Gwen::UnicodeString & s, wchar_t /*delim*/, std::vector<Gwen::UnicodeString> & elems )
 {
 	Gwen::UnicodeString str;
 

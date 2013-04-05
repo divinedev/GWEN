@@ -59,12 +59,12 @@ void Dragger::OnMouseMoved( int x, int y, int deltaX, int deltaY )
 	onDragged.Call( this, info );
 }
 
-void Dragger::Render( Skin::Base* skin )
+void Dragger::Render( Skin::Base* /*skin*/ )
 {
 	//skin->DrawButton(this,false,false, false);
 }
 
-void Dragger::OnMouseDoubleClickLeft( int x, int y )
+void Dragger::OnMouseDoubleClickLeft( int /*x*/, int /*y*/ )
 {
 	onDoubleClickLeft.Call( this );
 }

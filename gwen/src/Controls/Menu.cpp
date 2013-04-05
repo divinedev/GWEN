@@ -140,7 +140,7 @@ void Menu::OnHoverItem( Gwen::Controls::Base* pControl )
 	pItem->OpenMenu();
 }
 
-void Menu::Open( unsigned int iPos )
+void Menu::Open( unsigned int /*iPos*/ )
 {
 	SetHidden( false );
 	BringToFront();

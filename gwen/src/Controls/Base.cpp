@@ -1165,7 +1165,7 @@ TextObject Base::GetValue()
 	return "";
 }
 
-void Base::SetValue( const TextObject & strValue )
+void Base::SetValue( const TextObject & /*strValue*/ )
 {
 }
 

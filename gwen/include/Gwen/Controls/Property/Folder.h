@@ -26,7 +26,7 @@ namespace Gwen
 						m_strDialogName = "Find Folder";
 					}
 
-					void OnButtonPress( Controls::Base* control )
+					void OnButtonPress( Controls::Base* /*control*/ )
 					{
 						Gwen::Dialogs::FolderOpen( true, m_strDialogName, m_TextBox->GetText().Get(), this, &Folder::EventFilePicked );
 					}
