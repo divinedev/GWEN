@@ -26,6 +26,8 @@ namespace Gwen
 
 				virtual void Layout( Skin::Base* skin );
 				virtual void Render( Skin::Base* skin );
+				virtual void OnBoundsChanged( Gwen::Rect oldBounds );
+				virtual void OnChildBoundsChanged( Gwen::Rect oldChildBounds, Base* pChild );
 
 				virtual float CalculateValue();
 				virtual void UpdateBarFromValue();

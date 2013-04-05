@@ -47,3 +47,28 @@ void VerticalSlider::Render( Skin::Base* skin )
 {
 	skin->DrawSlider( this, false, m_bClampToNotches ? m_iNumNotches : 0, m_SliderBar->Height() );
 }
+
+void VerticalSlider::OnBoundsChanged( Gwen::Rect oldBounds )
+{
+	BaseClass::OnBoundsChanged( oldBounds );
+
+	// If the control's height changed, the slider bar's position must
+	// be updated to keep pointing at the actual slider value
+	if ( GetBounds().h != oldBounds.h )
+	{
+		m_SliderBar->SetWidth( Width() );  // always keep the bar the same width as the slider
+		UpdateBarFromValue();
+	}
+}
+
+void VerticalSlider::OnChildBoundsChanged( Gwen::Rect oldChildBounds, Base* pChild )
+{
+	BaseClass::OnChildBoundsChanged( oldChildBounds, pChild );
+
+	// If the slider bar's height changed, the bar's position must
+	// be updated to keep pointing at the actual slider value
+	if ( pChild == m_SliderBar && pChild->GetBounds().h != oldChildBounds.h )
+	{
+		UpdateBarFromValue();
+	}
+}
